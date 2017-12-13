@@ -11,6 +11,10 @@ web3.setProvider(new web3.providers.HttpProvider('http://localhost:8545'));
 var v = web3.version.api;
 console.log(v);
 
+web3.version.getNetwork(function(error, result){
+    console.lot(error, result);
+});
+
 //var coinbase = web3.eth.coinbase;
 //console.log(coinbase);
 //
